@@ -51,7 +51,7 @@ search.addEventListener('click', () => {
                     image.src = 'images/cloud.png';
                     break;
 
-                case 'Haze':
+                case 'Mist':
                     image.src = 'images/mist.png';
                     break;
 
@@ -59,7 +59,7 @@ search.addEventListener('click', () => {
                     image.src = '';
             }
 
-            temperature.innerHTML = `${parseInt(json.main.temp)}<span>°C</span>`;
+            temperature.innerHTML = `${parseInt(json.main.temp)}<span>°C</span>`; //como cambiar los kelvin a grados celcius?
             description.innerHTML = `${json.weather[0].description}`;
             humidity.innerHTML = `${json.main.humidity}%`;
             wind.innerHTML = `${parseInt(json.wind.speed)}Km/h`;
